@@ -1,0 +1,16 @@
+<h1>New Birth Record</h1>
+
+<%= simple_form_for @birth_record do |f| %>
+  <%= f.input :birth_year, label: 'Year' %>
+  <%= f.input :birth_month, label: 'Month' %>
+  <%= f.input :birth_day, label: 'Day' %>
+  <%= f.input :first_name, label: 'First Name' %>
+  <%= f.input :middle_name, label: 'Middle Name' %>
+  <%= f.input :second_name, label: 'Second Name' %>
+  <%= f.input :last_name, label: 'Last Name' %>
+  <%= f.input :name_suffix, label: 'Suffix', collection:
+    [ 'I', 'II', 'III', 'IV', 'V', 'VI','Jr.', 'Sr.' ] %>
+  <%= f.input :code, label: 'Code', collection: [ 'IMP', 'placeholder' ] %>
+
+  <%= f.button :submit, 'Add Record' %>
+<% end %>

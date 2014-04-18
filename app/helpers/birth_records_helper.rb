@@ -1,0 +1,2 @@
+module BirthRecordsHelper
+end
