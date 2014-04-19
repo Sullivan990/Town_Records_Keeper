@@ -1,6 +1,6 @@
 <h1>New Birth Record</h1>
 
-<%= simple_form_for @birth_record do |f| %>
+<%= simple_form_for @birthrecord do |f| %>
   <%= f.input :birth_year, label: 'Year' %>
   <%= f.input :birth_month, label: 'Month' %>
   <%= f.input :birth_day, label: 'Day' %>
@@ -13,4 +13,5 @@
   <%= f.input :code, label: 'Code', collection: [ 'IMP', 'placeholder' ] %>
 
   <%= f.button :submit, 'Add Record' %>
+  <%= link_to 'Return to Index', birth_records_path %>
 <% end %>
