@@ -1,0 +1,34 @@
+<h1>Birth Records</h1>
+
+<p>
+  <%= link_to 'Add Birth Record', new_birth_record_path %>
+</p>
+
+<br/>
+
+<table>
+  <% @birthrecord.each do |f| %>
+  <th>
+    <td>Year</td>
+    <td>Month</td>
+    <td>Day</td>
+    <td>First Name</td>
+    <td>Middle Name</td>
+    <td>Second Name</td>
+    <td>Last Name</td>
+    <td>Suffix</td>
+    <td>Code</td>
+  </th>
+  <tr>
+    <td><%= f.birth_year %></td>
+    <td><%= f.birth_month %></td>
+    <td><%= f.birth_day %></td>
+    <td><%= f.first_name %></td>
+    <td><%= f.middle_name %></td>
+    <td><%= f.second_name %></td>
+    <td><%= f.last_name %></td>
+    <td><%= f.name_suffix %></td>
+    <td><%= f.code %></td>
+  </tr>
+  <% end %>
+</table>

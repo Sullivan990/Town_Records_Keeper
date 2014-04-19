@@ -4,7 +4,6 @@ feature "submit a new birth record" do
 
   scenario 'a user submits a valid birth record' do
     visit new_birth_record_path
-    save_and_open_page
 
     fill_in 'Month', with: '01'
     fill_in 'Day', with: '10'
