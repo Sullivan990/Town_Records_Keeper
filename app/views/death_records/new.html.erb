@@ -1,0 +1,15 @@
+<h1>New Death Record</h1>
+
+<%= simple_form_for @deathrecord do |f| %>
+  <%= f.input :year, label: 'Year' %>
+  <%= f.input :month, label: 'Month' %>
+  <%= f.input :day, label: 'Day' %>
+  <%= f.input :first_name, label: 'First Name' %>
+  <%= f.input :middle_name, label: 'Middle Name' %>
+  <%= f.input :second_name, label: 'Second Name' %>
+  <%= f.input :last_name, label: 'Last Name' %>
+  <%= f.input :maiden_name, label: 'Maiden Name' %>
+
+  <%= f.button :submit, 'Add Record' %>
+  <%= link_to 'Return to Index', death_records_path %>
+<% end %>

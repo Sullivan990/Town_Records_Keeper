@@ -1,7 +1,7 @@
-<h1>Birth Records</h1>
+<h1>Death Records</h1>
 
 <p>
-  <%= link_to 'Add Birth Record', new_birth_record_path %>
+  <%= link_to 'Add Death Record', new_death_record_path %>
 </p>
 
 <br/>
@@ -15,20 +15,18 @@
     <td>Middle Name</td>
     <td>Second Name</td>
     <td>Last Name</td>
-    <td>Suffix</td>
-    <td>Code</td>
+    <td>Maiden Name</td>
   </th>
-  <% @birthrecord.each do |f| %>
+  <% @deathrecord.each do |f| %>
   <tr>
-    <td><%= f.birth_year %></td>
-    <td><%= f.birth_month %></td>
-    <td><%= f.birth_day %></td>
+    <td><%= f.year %></td>
+    <td><%= f.month %></td>
+    <td><%= f.day %></td>
     <td><%= f.first_name %></td>
     <td><%= f.middle_name %></td>
     <td><%= f.second_name %></td>
     <td><%= f.last_name %></td>
-    <td><%= f.name_suffix %></td>
-    <td><%= f.code %></td>
+    <td><%= f.maiden_name %></td>
   </tr>
   <% end %>
 </table>
