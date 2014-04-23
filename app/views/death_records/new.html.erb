@@ -8,6 +8,8 @@
   <%= f.input :middle_name, label: 'Middle Name' %>
   <%= f.input :second_name, label: 'Second Name' %>
   <%= f.input :last_name, label: 'Last Name' %>
+  <%= f.input :name_suffix, label: 'Suffix', collection:
+    [ 'I', 'II', 'III', 'IV', 'V', 'VI','Jr.', 'Sr.' ] %>
   <%= f.input :maiden_name, label: 'Maiden Name' %>
 
   <%= f.button :submit, 'Add Record' %>
