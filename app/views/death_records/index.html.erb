@@ -1,0 +1,35 @@
+<h1>Death Records</h1>
+
+<p>
+  <%= link_to 'Add Death Record', new_death_record_path %>
+</p>
+
+<br/>
+<div class="small-6 columns">
+  <table>
+    <tr>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Day</th>
+      <th>First Name</th>
+      <th>Middle Name</th>
+      <th>Second Name</th>
+      <th>Last Name</th>
+      <th>Maiden Name</th>
+      <th>Suffix</th>
+    </tr>
+    <% @deathrecord.each do |f| %>
+    <tr>
+      <td><%= f.year %></td>
+      <td><%= f.month %></td>
+      <td><%= f.day %></td>
+      <td><%= f.first_name %></td>
+      <td><%= f.middle_name %></td>
+      <td><%= f.second_name %></td>
+      <td><%= f.last_name %></td>
+      <td><%= f.name_suffix %></td>
+      <td><%= f.maiden_name %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>

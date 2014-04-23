@@ -7,18 +7,18 @@
 <br/>
 
 <table>
+  <tr>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Day</th>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Second Name</th>
+    <th>Last Name</th>
+    <th>Suffix</th>
+    <th>Code</th>
+  </tr>
   <% @birthrecord.each do |f| %>
-  <th>
-    <td>Year</td>
-    <td>Month</td>
-    <td>Day</td>
-    <td>First Name</td>
-    <td>Middle Name</td>
-    <td>Second Name</td>
-    <td>Last Name</td>
-    <td>Suffix</td>
-    <td>Code</td>
-  </th>
   <tr>
     <td><%= f.birth_year %></td>
     <td><%= f.birth_month %></td>
