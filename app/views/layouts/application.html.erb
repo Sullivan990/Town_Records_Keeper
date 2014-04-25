@@ -12,6 +12,15 @@
   </head>
 
   <body>
+    <div class='row'>
+      <div>
+        <h1>Town Records Keeper
+
+        </h1>
+      <%= link_to 'Birth Records', birth_records_path, class: "button right center small" %>
+      <%= link_to 'Death Records', death_records_path, class: "button right center small" %>
+      </div>
+    </div>
 
     <%= notice %>
     <%= yield %>
